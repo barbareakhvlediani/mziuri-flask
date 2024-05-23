@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ post['title'] }}</h1>
+<p>{{ post['content'] }}</p>
+<p><small>Created on {{ post['date_created'] }}</small></p>
+<a class="btn btn-secondary" href="{{ url_for('index') }}">Back</a>
+{% endblock %}
